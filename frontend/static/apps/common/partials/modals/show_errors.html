@@ -1,0 +1,24 @@
+<div class='modal-header'>
+	Sorry, we could not process your request
+</div>
+<div class='section-md'>
+	<div ng-if='form_errors'>
+		<p class='flow-text red-text'> Please fill valid data. </p>
+		<div ng-repeat='field in form_errors'>
+			<b> {{field.label}}</b><br>
+			<ul>
+				<li ng-repeat='error in field.errors'>
+					<span ng-bind-html='error'></span> </li>
+				
+			</ul>
+		</div>
+	</div>
+	<div ng-if='errors'>
+
+		<div ng-repeat='error in errors'>
+			<p class='blue-grey-text'>
+				<span ng-bind-html='error'></span>
+			</p>
+		</div>
+	</div>
+</div>
