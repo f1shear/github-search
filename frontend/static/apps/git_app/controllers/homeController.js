@@ -4,7 +4,7 @@
 
     angular.module('GitApp')
         .controller('HomeController',
-            function($scope, $rootScope, $routeParams, $timeout, $cookies, facebookAuth, $interval, awsService) {        	
+            function($scope, $rootScope, $routeParams, $timeout, $cookies, facebookAuth, $location, $interval) {        	
 
             
                 $scope.categories = [
@@ -58,9 +58,16 @@
                         'id':'clojure',
                         'label':'Clojure',
                     },
-                    
+
 
                 ]
+
+                $scope.navigateToCategory = function(category){
+                    console.log(category);
+                    var category_page = '/category/'+category.id;
+                    $location.path(category_page);
+                }
+
 
                
 

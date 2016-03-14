@@ -18,6 +18,11 @@
                 templateUrl: './static/apps/git_app/partials/home.html',
                 controller: 'HomeController'
             })
+            .when('/category/:categoryID', {
+
+                templateUrl: './static/apps/git_app/partials/category.html',
+                controller: 'CategoryPageController'
+            })
             .otherwise({
                 redirectTo: '/'
             })
