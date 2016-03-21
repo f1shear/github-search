@@ -2,7 +2,7 @@
 
     'use strict';
 
-    angular.module('GitApp').service('facebookAuth',
+    angular.module('GitApp').service('authService',
         function($q, $cookies) {
 
 

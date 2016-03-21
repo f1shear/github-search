@@ -4,7 +4,7 @@
 
     angular.module('GitApp')
         .controller('HomeController',
-            function($scope, $rootScope, $routeParams, $timeout, $cookies, facebookAuth, $location, $interval) {        	
+            function($scope, $rootScope, $routeParams, $timeout, $cookies, $location, $interval) {        	
 
             
                 $scope.categories = [
